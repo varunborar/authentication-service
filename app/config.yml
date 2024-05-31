@@ -1,0 +1,6 @@
+# Any values enclosed in << >> are expected to be set as environment variables
+# <<ENV>> expects ENV to be set as an environment variable
+app:
+  version: 0.0.1
+  name: auth-monkey
+  env: <<ENV>>
