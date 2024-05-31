@@ -12,10 +12,12 @@ class UserModel(BaseModel):
         title="Email of the user"
     )
     password: str = Field(
-        title="Password of the user"
+        title="Password of the user",
+        default=None
     )
     userid: str = Field(
         title="User ID",
-        description="Unique identifier of the user"
+        description="Unique identifier of the user",
+        default=None
     )
 
