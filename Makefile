@@ -23,8 +23,8 @@ install:
 
 clean:
 	docker-compose -f docker-compose.dev.yml down
-	find . -type f -name '*.pyc' -delete
-	find . -type d -name '__pycache__' -delete
+	del /S /Q *.pyc
+	del /S /Q __pycache__
 
 help:
 	@echo "Makefile commands:"
